@@ -1,0 +1,10 @@
+{
+  "name": "fusuma-figma-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fusuma": "^1.1.0",
+    "gh-pages": "^2.0.1"
+  }
+}
