@@ -1,13 +1,13 @@
 meta:
   url:
-  name:
-  author:
+  name: Web slide with fusuma and figma
+  author: quramy
   thumbnail:
-  description:
+  description: Web slide with fusuma and figma
   sns:
     - twitter
 slide:
-  loop: true
+  loop: false
   sidebar: true
   targetBlank: true
   showIndex: false
@@ -15,8 +15,9 @@ slide:
   code:
     languages:
       - javascript
+      - typescript
     plugins: []
     theme: default
 extends:
   js:
-  css:
+  css: styles.css

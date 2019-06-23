@@ -3,8 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist && gulp",
+    "build": "fusuma build -d fusuma_wd && mv fusuma_wd/dist dist"
+  },
   "dependencies": {
-    "fusuma": "^1.1.0",
     "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "@fusuma/task-live": "^1.4.0",
+    "fusuma": "^1.5.1",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.0.0",
+    "image-downloader": "^3.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "rimraf": "^2.6.3"
   }
 }
