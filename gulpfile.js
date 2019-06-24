@@ -53,4 +53,10 @@ function fetch() {
   }));
 }
 
+function copyDist() {
+  return gulp.src(["fusuma_wd/dist/**/*"])
+    .pipe(gulp.dest("dist"));
+}
+
 exports.default = gulp.series(copy, replaceIframe, fetch);
+exports.copyDist = gulp.series(copyDist);

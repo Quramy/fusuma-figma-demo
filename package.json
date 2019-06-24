@@ -4,8 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf dist && gulp",
-    "build": "fusuma build -d fusuma_wd && mv fusuma_wd/dist dist"
+    "start": "fusuma start",
+    "prebuild": "rimraf \"dist/**/*\" && gulp",
+    "build": "fusuma build -d fusuma_wd",
+    "postbuild": "gulp copyDist",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^2.0.1"

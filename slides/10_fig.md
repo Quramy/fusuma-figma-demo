@@ -4,6 +4,8 @@
 
 ## 最近、fusumaに乗り換えてみました
 
+<iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWq8Q2ugeRMAuvbh0y5M5yEWr%2Ffusuma-figma-demo%3Fnode-id%3D74%253A2" allowfullscreen></iframe>
+
 [https://github.com/hiroppy/fusuma/issues](https://github.com/hiroppy/fusuma/issues)
 
 ---
@@ -51,6 +53,8 @@ function hoge() {
 
 * Sketchでpngにexport
 * パスを.mdに貼り付け
+* **図の修正の度にこれらをやり直し**
+
 
 ### ダルい :innocent:
 
@@ -72,8 +76,6 @@ function hoge() {
 ---
 
 ## やってみた＆demo
-
-<iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWq8Q2ugeRMAuvbh0y5M5yEWr%2Ffusuma-figma-demo%3Fnode-id%3D27%253A0" allowfullscreen></iframe>
 
 ---
 
@@ -133,6 +135,14 @@ function fetch() {
   }));
 }
 ```
+
+---
+
+## nitな注意事項
+
+Figmaのimage APIで直接取得できるのはS3のアドレス。
+
+直接これをimgのsrcに指定してしまうと、30日後に消えるため、一旦ローカルにDLしてしまった方がよいです。
 
 ---
 
